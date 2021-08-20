@@ -1,0 +1,43 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+  border-radius: 10px;
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(50, 50, 50);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(120, 120, 120);
+}
+
+#particles-js {
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: fixed;
+  margin: 0%;
+}
+
+@media only screen and (max-width: 767px) {
+  #particles-js {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+#root {
+  position: absolute;
+  width: 100%;
+}
