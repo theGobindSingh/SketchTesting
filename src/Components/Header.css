@@ -26,9 +26,14 @@
   text-decoration: none;
 }
 
+#btn_drop_head > * > * > * > * {
+  text-shadow: none;
+}
+
 #btn_drop_down_head {
-  opacity: 50%;
+  opacity: 85%;
   cursor: pointer;
+  background-color: aliceblue;
 }
 
 #Header_Buttons {

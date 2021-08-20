@@ -9,6 +9,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* :hover {
+  text-shadow: none;
+}
+
 @media only screen and (min-width: 767px) {
   * {
     cursor: none;

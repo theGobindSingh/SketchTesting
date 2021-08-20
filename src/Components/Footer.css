@@ -104,6 +104,8 @@
 
 #Footer > div > a:hover {
   color: white !important;
+  text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
+    #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px !important;
   cursor: pointer;
 }
 
