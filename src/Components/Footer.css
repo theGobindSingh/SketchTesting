@@ -13,6 +13,11 @@
   overflow: hidden;
 }
 
+#Footer > * > *,
+#FooterMobile > * > * {
+  text-shadow: none;
+}
+
 .FooterMobile_forFlex {
   display: flex;
 }
