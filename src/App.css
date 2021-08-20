@@ -3,14 +3,10 @@
 * {
   margin: 0;
   font-family: "Poppins";
-  text-shadow: #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px,
-    #000 0px 0px 2px, #000 0px 0px 2px, #000 0px 0px 2px;
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* :hover {
-  text-shadow: none;
 }
 
 @media only screen and (min-width: 767px) {

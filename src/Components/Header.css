@@ -45,6 +45,11 @@
   float: right;
 }
 
+#btnHeadCol1 > * :hover,
+#btnHeadCol2 > * :hover {
+  text-shadow: none;
+}
+
 @media only screen and (max-width: 767px) {
   #btnHeadCol1,
   #btnHeadCol2 {

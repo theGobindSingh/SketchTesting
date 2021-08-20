@@ -21,6 +21,10 @@
   font-size: 25px;
 }
 
+.HomeIntroDivFM > * :hover {
+  text-shadow: none;
+}
+
 #HomePageDiv > h3 {
   margin: 5%;
   margin-bottom: 3%;
