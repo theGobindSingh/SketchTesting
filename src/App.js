@@ -1,7 +1,12 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Route,
+  Switch,
+} from "react-router-dom";
 
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
@@ -18,7 +23,7 @@ import FooterMobile from "./Components/FooterMobile";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Header />
         <HeaderMobile />
@@ -48,7 +53,7 @@ function App() {
         <Footer />
         <FooterMobile />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
