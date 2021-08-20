@@ -1,0 +1,87 @@
+.HomeIntroDivFM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.HomeIntroDiv {
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
+}
+
+.HomeIntroDivFM > p {
+  color: aliceblue;
+  max-width: 50%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 25px;
+}
+
+#HomePageDiv > h3 {
+  margin: 5%;
+  margin-bottom: 3%;
+  margin-left: 7%;
+  color: aliceblue;
+}
+
+#HomePageDiv > * > * > h1 {
+  color: aliceblue;
+  max-width: 64%;
+}
+
+#HomePageDiv > * > h2 {
+  color: aliceblue;
+  max-width: 64%;
+  text-align: left;
+  margin-left: 10%;
+}
+
+#HomePageDiv {
+  min-height: 510px;
+}
+
+#HomePageDiv > .HomeAnimations {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+/* Lottie Animations */
+.Col1 > div,
+.Col1 > div > svg,
+.Col2 > div,
+.Col2 > div > svg,
+.Col3 > div,
+.Col3 > div > svg {
+  max-height: 400px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.Col1 > h4,
+.Col2 > h4,
+.Col3 > h4 {
+  align-items: center;
+  vertical-align: middle;
+  color: aliceblue;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  #HomePageDiv > * > * > h1 {
+    color: aliceblue;
+    max-width: 90%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  .HomeIntroDivFM > p {
+    color: aliceblue;
+    max-width: 90%;
+    margin-top: 2%;
+    margin-bottom: 7%;
+    text-align: end;
+    font-size: 18px;
+  }
+}

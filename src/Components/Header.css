@@ -1,0 +1,50 @@
+#header_logo {
+  object-fit: contain;
+  width: 250px;
+}
+
+#header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  vertical-align: middle;
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#btn_drop_head > * > * > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+#btn_drop_down_head {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+#Header_Buttons {
+  width: 450px;
+  align-items: center;
+  justify-content: space-between;
+  float: right;
+}
+#Header_Buttons > .row {
+  float: right;
+}
+
+@media only screen and (max-width: 767px) {
+  #btnHeadCol1,
+  #btnHeadCol2 {
+    visibility: hidden;
+    display: none;
+  }
+}

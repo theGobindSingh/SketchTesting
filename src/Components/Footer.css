@@ -1,0 +1,105 @@
+#Footer,
+#FooterMobile {
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5%;
+  padding: 3.5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.FooterMobile_forFlex {
+  display: flex;
+}
+
+#Footer > * {
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  #Footer {
+    display: none;
+    visibility: hidden;
+  }
+  #Foot_icons > * > * > svg {
+    font-size: 2.25rem;
+  }
+
+  #Foot_icons > * > a {
+    color: inherit;
+    text-decoration: none;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  #FooterMobile > div > a {
+    text-decoration: none;
+    color: inherit;
+  }
+  #Foot_icons > div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  #FooterMobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+#Foot_icons > * > * > * > svg {
+  font-size: 2.25rem;
+}
+
+#Foot_icons > * > * > a {
+  color: inherit;
+  text-decoration: none;
+}
+#Foot_icons > * > * > a :hover {
+  color: white;
+  text-decoration: none;
+}
+#Foot_icons > .row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#Foot_icons > * > * > svg :hover {
+  color: white;
+  font-size: 3rem;
+}
+
+#Footer > div > img {
+  width: 100px;
+}
+
+#Footer > hr.solid {
+  border-left: 0.5px solid #000000;
+  border-right: 0.5px solid #000000;
+  width: 2px;
+  height: 145px;
+}
+
+#Footer > div > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#Footer > div > a:hover {
+  color: white !important;
+  cursor: pointer;
+}
+
+.Footer_Message_Container > .Footer_Message {
+  max-width: 360px;
+}
