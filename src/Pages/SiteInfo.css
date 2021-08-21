@@ -36,12 +36,16 @@
   justify-content: center;
   color: aliceblue;
   padding: 3%;
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
 }
 
 #SiteInfoAnis {
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
 }
 
 #SiteInfoAnis > .row {

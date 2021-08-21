@@ -11,6 +11,11 @@
   margin: 4%;
 }
 
+#HomePageDiv {
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+}
+
 .HomeIntroDivFM > p {
   color: aliceblue;
   -webkit-font-smoothing: antialiased;
