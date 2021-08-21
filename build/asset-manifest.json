@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "./static/css/main.913a83e4.chunk.css",
-    "main.js": "./static/js/main.9b25f55f.chunk.js",
-    "main.js.map": "./static/js/main.9b25f55f.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.3c5954de.js",
-    "runtime-main.js.map": "./static/js/runtime-main.3c5954de.js.map",
+    "main.css": "./static/css/main.83d74c46.chunk.css",
+    "main.js": "./static/js/main.0d5d4853.chunk.js",
+    "main.js.map": "./static/js/main.0d5d4853.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.c4d4b539.js",
+    "runtime-main.js.map": "./static/js/runtime-main.c4d4b539.js.map",
     "static/css/2.818011ed.chunk.css": "./static/css/2.818011ed.chunk.css",
-    "static/js/2.283598bb.chunk.js": "./static/js/2.283598bb.chunk.js",
-    "static/js/2.283598bb.chunk.js.map": "./static/js/2.283598bb.chunk.js.map",
-    "static/js/3.4e8470e9.chunk.js": "./static/js/3.4e8470e9.chunk.js",
-    "static/js/3.4e8470e9.chunk.js.map": "./static/js/3.4e8470e9.chunk.js.map",
+    "static/js/2.7e9cbf02.chunk.js": "./static/js/2.7e9cbf02.chunk.js",
+    "static/js/2.7e9cbf02.chunk.js.map": "./static/js/2.7e9cbf02.chunk.js.map",
+    "static/js/3.e3d0d9f1.chunk.js": "./static/js/3.e3d0d9f1.chunk.js",
+    "static/js/3.e3d0d9f1.chunk.js.map": "./static/js/3.e3d0d9f1.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.818011ed.chunk.css.map": "./static/css/2.818011ed.chunk.css.map",
-    "static/css/main.913a83e4.chunk.css.map": "./static/css/main.913a83e4.chunk.css.map",
-    "static/js/2.283598bb.chunk.js.LICENSE.txt": "./static/js/2.283598bb.chunk.js.LICENSE.txt",
-    "static/media/sketch_logo.f19afd7b.png": "./static/media/sketch_logo.f19afd7b.png"
+    "static/css/main.83d74c46.chunk.css.map": "./static/css/main.83d74c46.chunk.css.map",
+    "static/js/2.7e9cbf02.chunk.js.LICENSE.txt": "./static/js/2.7e9cbf02.chunk.js.LICENSE.txt",
+    "static/media/BS_logo.35904b2f.png": "./static/media/BS_logo.35904b2f.png",
+    "static/media/SemanticUI_logo.3c0109cd.png": "./static/media/SemanticUI_logo.3c0109cd.png",
+    "static/media/react_bootstrap_logo.eafc28ed.png": "./static/media/react_bootstrap_logo.eafc28ed.png",
+    "static/media/sketch_logo.f19afd7b.png": "./static/media/sketch_logo.f19afd7b.png",
+    "static/media/strapi_logo.a2c13ba4.png": "./static/media/strapi_logo.a2c13ba4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3c5954de.js",
+    "static/js/runtime-main.c4d4b539.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.283598bb.chunk.js",
-    "static/css/main.913a83e4.chunk.css",
-    "static/js/main.9b25f55f.chunk.js"
+    "static/js/2.7e9cbf02.chunk.js",
+    "static/css/main.83d74c46.chunk.css",
+    "static/js/main.0d5d4853.chunk.js"
   ]
 }

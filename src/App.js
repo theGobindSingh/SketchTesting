@@ -10,6 +10,7 @@ import EventsPage from "./Pages/EventsPage";
 import JoinPage from "./Pages/JoinPage";
 import StoriesPage from "./Pages/StoriesPage";
 import TeamPage from "./Pages/TeamPage";
+import SiteInfo from "./Pages/SiteInfo";
 
 import Header from "./Components/Header";
 import HeaderMobile from "./Components/HeaderMobile";
@@ -45,7 +46,7 @@ function App() {
             <TeamPage />
           </Route>
           <Route path="/SiteInfo">
-            <TeamPage />
+            <SiteInfo />
           </Route>
         </Switch>
         <Footer />
