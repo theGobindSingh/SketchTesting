@@ -71,7 +71,7 @@ export default function SiteInfo() {
             <div>
               <img
                 src={bootREACTlogo}
-                class="img"
+                className="img"
                 alt="Semantic UI React Logo"
               ></img>
             </div>
@@ -79,7 +79,11 @@ export default function SiteInfo() {
           <Col>
             <h4>Semantic UI</h4>
             <div>
-              <img src={suilogo} class="img" alt="Semantic UI React Logo"></img>
+              <img
+                src={suilogo}
+                className="img"
+                alt="Semantic UI React Logo"
+              ></img>
             </div>
           </Col>
         </Row>
