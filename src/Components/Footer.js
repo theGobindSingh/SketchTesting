@@ -23,6 +23,8 @@ export default function Footer() {
         <br></br>
         <Link to="/Events">Our Events</Link>
         <br></br>
+        <Link to="/SiteInfo">Site Info</Link>
+        <br></br>
       </div>
       <hr className="solid"></hr>
       <div>

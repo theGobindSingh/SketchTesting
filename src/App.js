@@ -44,6 +44,9 @@ function App() {
           <Route path="/Team">
             <TeamPage />
           </Route>
+          <Route path="/SiteInfo">
+            <TeamPage />
+          </Route>
         </Switch>
         <Footer />
         <FooterMobile />
