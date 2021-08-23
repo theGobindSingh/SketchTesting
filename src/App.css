@@ -10,4 +10,13 @@
   * {
     cursor: none;
   }
+  svg {
+    cursor: unset;
+  }
+  path {
+    cursor: unset;
+  }
+  a {
+    cursor: unset;
+  }
 }

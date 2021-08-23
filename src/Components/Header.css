@@ -32,8 +32,12 @@
 }
 
 #btn_drop_down_head {
-  cursor: pointer;
+  cursor: unset;
   background-color: aliceblue;
+}
+
+#btn_drop_down_head > * > * > span {
+  cursor: unset;
 }
 
 #Header_Buttons {
@@ -41,6 +45,7 @@
   align-items: center;
   justify-content: space-between;
   float: right;
+  cursor: unset;
 }
 #Header_Buttons > .row {
   float: right;

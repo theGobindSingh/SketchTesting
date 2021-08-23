@@ -112,3 +112,6 @@
 .Footer_Message_Container > .Footer_Message {
   max-width: 360px;
 }
+.Footer_Message_Container > img {
+  margin-bottom: 3%;
+}
