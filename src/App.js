@@ -16,10 +16,12 @@ import Header from "./Components/Header";
 import HeaderMobile from "./Components/HeaderMobile";
 import Footer from "./Components/Footer";
 import FooterMobile from "./Components/FooterMobile";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="App">
         <Header />
         <HeaderMobile />
