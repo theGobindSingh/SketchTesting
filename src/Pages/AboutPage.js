@@ -58,7 +58,7 @@ export default function AboutPage() {
         <Lottie className="AboutAni" animationData={DesignAni} />
       </div>
       <div className="FM D">
-        <Lottie className="AboutAni" animationData={DevelopAni} />
+        <Lottie className="AboutAni FOR_ALL" animationData={DevelopAni} />
 
         <div className="AboutInfo R">
           <div className="AboutInfoHead">
@@ -77,6 +77,10 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
+        <Lottie
+          className="AboutAni ONLY_FOR_PHONE"
+          animationData={DevelopAni}
+        />
       </div>
       <div className="FM D">
         <div className="AboutInfo">

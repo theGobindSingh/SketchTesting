@@ -6,6 +6,7 @@
 
 #AboutUsDiv {
   vertical-align: middle;
+  overflow: hidden;
 }
 
 #AboutUsDiv > h1 {
@@ -37,10 +38,14 @@
   justify-content: space-evenly;
   padding-left: 5%;
   padding-right: 5%;
+  overflow: hidden;
 }
 #AboutUsDiv > .FM.D > .AboutAni {
   display: flex;
   align-items: center;
+}
+#AboutUsDiv > .FM.D > .AboutAni.ONLY_FOR_PHONE {
+  display: none;
 }
 #AboutUsDiv > .FM.D > div > svg {
   align-self: center;
@@ -68,5 +73,18 @@
   #AboutUsDiv > .FM > p {
     font-size: 125%;
     width: 80%;
+  }
+  #AboutUsDiv > .FM.D > .AboutInfo {
+    margin: 0% !important;
+    padding: 4% !important;
+  }
+  #AboutUsDiv > .FM.D {
+    display: unset;
+  }
+  #AboutUsDiv > .FM.D > .AboutAni.ONLY_FOR_PHONE {
+    display: unset;
+  }
+  #AboutUsDiv > .FM.D > .AboutAni.FOR_ALL {
+    display: none;
   }
 }
