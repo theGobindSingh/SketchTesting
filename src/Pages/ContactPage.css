@@ -1,0 +1,70 @@
+#ContactDiv {
+  color: aliceblue;
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+#ContactDiv > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+#ContactDiv > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 17%;
+  padding-right: 17%;
+  font-size: 20px;
+  margin: 4%;
+}
+
+@media only screen and (max-width: 767px) {
+  #ContactDiv > h1 {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  #ContactDiv > p {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+#ContactDiv > .ContactFormDiv > * > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  width: unset;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+#ContactDiv > .ContactFormDiv > * > button > span {
+  padding-right: 20%;
+  cursor: pointer;
+}
+#ContactDiv > .ContactFormDiv > * > button > svg {
+  font-size: 3rem;
+}
+
+#ContactDiv > .ContactFormDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+#ContactDiv > .ContactFormDiv > form {
+  width: 600px;
+}
+#ContactDiv > .ContactFormDiv > form > div > input {
+  cursor: auto;
+}
+#ContactDiv > .ContactFormDiv > form > .message > textarea {
+  cursor: auto;
+}
