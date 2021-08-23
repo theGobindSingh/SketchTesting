@@ -40,7 +40,12 @@ export default function ContactPage() {
               placeholder="Please type your message."
             ></Form.Control>
           </Form.Group>
-          <Button variant="outline-light">
+          <Button
+            variant="outline-light"
+            onClick={() => {
+              return alert("Submitted!");
+            }}
+          >
             <span> Submit</span> <CheckSquareFill />
           </Button>
         </Form>
