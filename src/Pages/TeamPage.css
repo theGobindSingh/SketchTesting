@@ -1,0 +1,17 @@
+#TeamPageDIV {
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+}
+#TeamPageDIV > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

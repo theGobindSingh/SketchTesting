@@ -6,6 +6,16 @@
   font-family: "Poppins";
 }
 
+#underDevAni {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0%;
+  padding: 0%;
+}
+
 @media only screen and (min-width: 767px) {
   * {
     cursor: none;
