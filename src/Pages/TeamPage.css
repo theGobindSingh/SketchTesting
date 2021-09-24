@@ -1,17 +1,103 @@
 #TeamPageDIV {
-  justify-content: center;
-  align-items: center;
   color: aliceblue;
-  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
-    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+  font-size: 20px;
+  padding-left: 7%;
+  padding-right: 7%;
 }
-#TeamPageDIV > h1 {
-  display: flex;
-  justify-content: center;
+
+#TeamPageDIV h2 {
+  font-style: italic;
+}
+
+#TeamPageDIV .teamOurBody {
   align-items: center;
 }
-#dev {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+#TeamPageDIV .teamOurBody .bodyIcon {
+  font-size: 45px;
+  margin-left: 10px;
+}
+
+#TeamPageDIV img {
+  height: 20rem;
+  object-fit: cover;
+}
+
+#TeamPageDIV .Members img {
+  height: 13rem;
+  object-fit: cover;
+}
+
+#TeamPageDIV .card {
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  #TeamPageDIV .col,
+  #TeamPageDIV .card {
+    margin-right: 0%;
+    padding-right: 0%;
+  }
+
+  #TeamPageDIV .card img {
+    height: 12rem;
+    width: auto;
+  }
+  #TeamPageDIV .Members .card {
+    height: 7.5rem;
+    width: 9rem;
+  }
+  #TeamPageDIV .Members p {
+    display: none;
+  }
+  #TeamPageDIV .OManagers .card {
+    width: 9rem;
+  }
+
+  #TeamPageDIV .Alumini .card {
+    width: 9rem;
+    height: 9rem;
+    margin: 0%;
+  }
+
+  #TeamPageDIV .Alumini .card img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+#TeamPageDIV .card * {
+  margin: 0%;
+  padding: 0%;
+}
+
+#TeamPageDIV .col {
+  margin-top: 3%;
+}
+#TeamPageDIV .col * {
+  cursor: auto !important;
+}
+
+#TeamPageDIV .TeamIcons * {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer !important;
+  stroke: grey;
+  stroke-width: 0.5px;
+}
+
+#TeamPageDIV .TeamIcons * :hover {
+  color: black;
+}
+#TeamPageDIV .TeamIcons path :hover {
+  stroke: none;
+}
+
+#TeamPageDIV .Team {
+  padding-top: 2%;
+  padding-left: 2%;
+  margin-bottom: 5%;
 }

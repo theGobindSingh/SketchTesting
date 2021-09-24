@@ -40,55 +40,55 @@ export default function Header() {
           </Col>
           <Col md="auto">
             <div>
-              <Dropdown autoClose="outside" title="" id="btn_drop_head">
+              <Dropdown autoClose="true" title="" id="btn_drop_head">
                 <Dropdown.Toggle variant="dark">
                   <List />
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu id="btn_drop_down_head">
-                  <Dropdown.Item className="drop">
+                  <Dropdown.Item className="drop" as="div">
                     <Link to="/">
                       <HouseFill />
                       <span>Home</span>
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="drop">
+                  <Dropdown.Item className="drop" as="div">
                     <Link to="/Events">
                       <Grid3x3GapFill />
                       <span>Our Events</span>
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="drop">
+                  <Dropdown.Item className="drop" as="div">
                     <Link to="/About">
                       <InfoCircleFill />
                       <span>About Us</span>
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="drop">
+                  <Dropdown.Item className="drop" as="div">
                     <Link to="/Team">
                       <PeopleFill />
                       <span>Our Team</span>
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="drop">
+                  <Dropdown.Item className="drop" as="div">
                     <Link to="/Join">
                       <BookmarkHeartFill />
                       <span>Join Us</span>
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="drop">
+                  <Dropdown.Item className="drop" as="div">
                     <Link to="/Contact">
                       <ChatSquareDotsFill />
                       <span>Contact Us</span>
                     </Link>
                   </Dropdown.Item>
 
-                  <Dropdown.Item className="drop">
+                  <Dropdown.Item className="drop" as="div">
                     <Link to="/Stories">
                       <BookHalf />
                       <span>Stories</span>

@@ -1,10 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 import "./JoinPage.css";
 import { Button, Form } from "react-bootstrap";
 import { PersonPlusFill } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
+import Loading from "../Components/Loading";
+import Error from "../Components/Error";
+import { useMutation, gql } from "@apollo/client";
+
+const JoinSubmit = gql`
+  mutation (
+    $Name: String!
+    $email: String!
+    $RAnum: String!
+    $yearAndSection: String!
+    $phone: Long!
+    $hobby: String!
+    $strengthAndWeakness: String!
+    $domain: ID!
+  ) {
+    createJoin(
+      input: {
+        data: {
+          Name: $Name
+          email: $email
+          yearAndSection: $yearAndSection
+          RAnum: $RAnum
+          phone: $phone
+          hobby: $hobby
+          strengthAndWeakness: $strengthAndWeakness
+          domain: $domain
+        }
+      }
+    ) {
+      join {
+        id
+        Name
+        domain {
+          name
+        }
+      }
+    }
+  }
+`;
 
 export default function JoinPage() {
+  var [Name, setName] = useState("");
+  const inputName = (inp) => {
+    setName(inp.target.value);
+  };
+  var [Email, setEmail] = useState("");
+  const inputEmail = (inp) => {
+    setEmail(inp.target.value);
+  };
+  var [YearSec, setYaS] = useState("");
+  const inputYaS = (inp) => {
+    setYaS(inp.target.value);
+  };
+  var [RAnum, setRAnum] = useState("");
+  const inputRAnum = (inp) => {
+    setRAnum(inp.target.value);
+  };
+  var [Phone, setPhone] = useState(0);
+  const inputPhone = (inp) => {
+    setPhone(inp.target.value);
+  };
+  var [Hobby, setHobby] = useState("");
+  const inputHobby = (inp) => {
+    setHobby(inp.target.value);
+  };
+  var [StrWek, setStrWek] = useState("");
+  const inputSaW = (inp) => {
+    setStrWek(inp.target.value);
+  };
+  var [Domain, setDomain] = useState("");
+  const inputDomain = (inp) => {
+    setDomain(inp.target.value);
+  };
+
+  const [joinSubmit, { data, loading, error }] = useMutation(JoinSubmit);
+  if (loading) {
+    return <Loading />;
+  }
+  if (error) {
+    return <Error />;
+  }
+
   return (
     <div id="JoinDiv">
       <h1>Be a part of our family!</h1>
@@ -23,6 +103,8 @@ export default function JoinPage() {
             <Form.Control
               type="name"
               placeholder="Please enter your full name."
+              onChange={inputName}
+              required
             ></Form.Control>
           </Form.Group>
           <Form.Group className="email mb-3">
@@ -30,15 +112,25 @@ export default function JoinPage() {
             <Form.Control
               type="email"
               placeholder="Please enter your e-mail address."
+              onChange={inputEmail}
+              required
             ></Form.Control>
           </Form.Group>
           <Form.Group className="year_section mb-3">
             <Form.Label>Year & Section</Form.Label>
-            <Form.Control placeholder="Which year you are in and what's your class section?"></Form.Control>
+            <Form.Control
+              placeholder="Which year you are in and what's your class section? (Format: 3/E)"
+              onChange={inputYaS}
+              required
+            ></Form.Control>
           </Form.Group>
           <Form.Group className="RA mb-3">
             <Form.Label>Registration Number</Form.Label>
-            <Form.Control placeholder="Please enter your SRM Registration (RA) number."></Form.Control>
+            <Form.Control
+              placeholder="Please enter your SRM Registration (RA) number. (Format: RA1911003020296)"
+              onChange={inputRAnum}
+              required
+            ></Form.Control>
           </Form.Group>
           <Form.Group className="contact mb-3">
             <Form.Label>Contact Number</Form.Label>
@@ -46,7 +138,9 @@ export default function JoinPage() {
               type="tel"
               pattern="\d*"
               size="10"
-              placeholder="Please enter your primary contact number."
+              placeholder="Please enter your primary contact number. (10 digits only)"
+              onChange={inputPhone}
+              required
             ></Form.Control>
           </Form.Group>
           <Form.Group className="hobbies mb-3">
@@ -58,6 +152,8 @@ export default function JoinPage() {
               as="textarea"
               rows={7}
               placeholder="Be creative and descriptive."
+              onChange={inputHobby}
+              required
             ></Form.Control>
           </Form.Group>
           <Form.Group className="strength_weakness mb-3">
@@ -67,6 +163,8 @@ export default function JoinPage() {
               as="textarea"
               rows={7}
               placeholder="Be creative and descriptive."
+              onChange={inputSaW}
+              required
             ></Form.Control>
           </Form.Group>
           <Form.Group className="domain mb-3">
@@ -74,23 +172,78 @@ export default function JoinPage() {
               Kindly choose among the following domains which fit the most to
               your passion.
             </Form.Label>
-            <Form.Select>
-              <option value="Media">Media</option>
-              <option value="RND">Research & Development</option>
-              <option value="Design">Designing</option>
-              <option value="Content">Content writing</option>
-              <option value="OrgPR">Organizing & PR</option>
-              <option value="Game">Gaming</option>
+            <Form.Select onChange={inputDomain} defaultValue="0">
+              <option value="0" disabled>
+                Select Here.
+              </option>
+              <option value="4" onChange={inputDomain}>
+                Media
+              </option>
+              <option value="6" onChange={inputDomain}>
+                Research & Development
+              </option>
+              <option value="2" onChange={inputDomain}>
+                Designing
+              </option>
+              <option value="1" onChange={inputDomain}>
+                Content writing
+              </option>
+              <option value="5" onChange={inputDomain}>
+                Organizing & PR
+              </option>
+              <option value="3" onChange={inputDomain}>
+                Gaming
+              </option>
             </Form.Select>
           </Form.Group>
-          <Button
-            variant="outline-light"
-            onClick={() => {
-              return alert("Submitted!");
-            }}
-          >
-            <span> Submit</span> <PersonPlusFill />
-          </Button>
+          <Link to="/">
+            <Button
+              variant="outline-light"
+              onClick={() => {
+                console.log(
+                  Name,
+                  Email,
+                  YearSec,
+                  RAnum,
+                  Phone,
+                  Hobby,
+                  StrWek,
+                  Domain
+                );
+                try {
+                  joinSubmit({
+                    variables: {
+                      Name: Name,
+                      email: Email,
+                      yearAndSection: YearSec,
+                      RAnum: RAnum,
+                      phone: parseInt(Phone),
+                      hobby: Hobby,
+                      strengthAndWeakness: StrWek,
+                      domain: parseInt(Domain),
+                    },
+                  }).then(() => {
+                    try {
+                      if (Object.keys(data).length === 1) {
+                        alert(
+                          "Submitted! Thank you, " + data.createJoin.join.Name
+                        );
+                      }
+                    } catch (e) {
+                      console.log(e);
+                    }
+                    if (error) {
+                      return <Error />;
+                    }
+                  });
+                } catch (e) {
+                  console.log(e);
+                }
+              }}
+            >
+              <span> Submit </span> <PersonPlusFill />
+            </Button>
+          </Link>
         </Form>
       </div>
     </div>

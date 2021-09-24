@@ -4,14 +4,20 @@
   color: aliceblue;
   text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
     #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+  padding-left: 7%;
+  padding-right: 7%;
 }
-#eventsPageDIV > h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.Events .aForImgEve {
+  overflow: hidden;
+  border-radius: 10px;
 }
-#dev {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Events img {
+  object-fit: contain;
+  transition: transform 0.4s;
+  max-height: 280px;
+}
+.Events img:hover {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
 }
