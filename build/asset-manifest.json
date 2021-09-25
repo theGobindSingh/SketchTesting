@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.93c34dd2.chunk.css",
+    "main.css": "./static/css/main.92b3f5cb.chunk.css",
     "main.js": "./static/js/main.974741ad.chunk.js",
     "main.js.map": "./static/js/main.974741ad.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.3de83058.js",
@@ -12,7 +12,7 @@
     "static/js/3.d3c4e81c.chunk.js.map": "./static/js/3.d3c4e81c.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.818011ed.chunk.css.map": "./static/css/2.818011ed.chunk.css.map",
-    "static/css/main.93c34dd2.chunk.css.map": "./static/css/main.93c34dd2.chunk.css.map",
+    "static/css/main.92b3f5cb.chunk.css.map": "./static/css/main.92b3f5cb.chunk.css.map",
     "static/js/2.582a58ed.chunk.js.LICENSE.txt": "./static/js/2.582a58ed.chunk.js.LICENSE.txt",
     "static/media/BS_logo.35904b2f.png": "./static/media/BS_logo.35904b2f.png",
     "static/media/SemanticUI_logo.3c0109cd.png": "./static/media/SemanticUI_logo.3c0109cd.png",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.3de83058.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.582a58ed.chunk.js",
-    "static/css/main.93c34dd2.chunk.css",
+    "static/css/main.92b3f5cb.chunk.css",
     "static/js/main.974741ad.chunk.js"
   ]
 }

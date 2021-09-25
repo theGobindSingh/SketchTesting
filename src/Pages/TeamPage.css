@@ -25,8 +25,14 @@
 }
 
 #TeamPageDIV .Members img {
-  height: 13rem;
   object-fit: cover;
+}
+#TeamPageDIV .Members .card {
+  height: 13rem;
+  width: 13rem;
+}
+#TeamPageDIV .Members p {
+  display: none;
 }
 
 #TeamPageDIV .card {
@@ -46,13 +52,7 @@
     height: 12rem;
     width: auto;
   }
-  #TeamPageDIV .Members .card {
-    height: 7.5rem;
-    width: 9rem;
-  }
-  #TeamPageDIV .Members p {
-    display: none;
-  }
+
   #TeamPageDIV .OManagers .card {
     width: 9rem;
   }
