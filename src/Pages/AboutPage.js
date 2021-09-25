@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import "./AboutPage.css";
 import { PersonPlusFill } from "react-bootstrap-icons";
 import Lottie from "lottie-react";
-import DesignAni from "../Assets/Animations/design.json";
-import DevelopAni from "../Assets/Animations/develop.json";
-import DeliverAni from "../Assets/Animations/deliver.json";
+import DesignAni from "../Assets/Animations/design_old.json";
+import DeliverAni from "../Assets/Animations/deliver_old.json";
+import DevelopAni from "../Assets/Animations/develop_old.json";
 
 export default function AboutPage() {
   return (

@@ -3,9 +3,9 @@ import { Button, Col, Row } from "react-bootstrap";
 import { ArrowBarRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
-import DesignAni from "../Assets/Animations/design.json";
-import DeliverAni from "../Assets/Animations/deliver.json";
-import DevelopAni from "../Assets/Animations/develop.json";
+import DesignAni from "../Assets/Animations/design_old.json";
+import DeliverAni from "../Assets/Animations/deliver_old.json";
+import DevelopAni from "../Assets/Animations/develop_old.json";
 
 import "./HomePage.css";
 
