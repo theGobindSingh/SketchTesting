@@ -128,7 +128,7 @@ export default function TeamPage() {
                 <Card.Img
                   variant="top"
                   alt="Card image"
-                  src={SHost + Alum.ProfilePicture.url}
+                  src={Alum.ProfilePicture.url}
                 />
                 <Card.ImgOverlay className="card-img-overlay d-flex flex-column justify-content-end">
                   <Card.Title style={{ paddingLeft: "7px" }}>
@@ -177,7 +177,7 @@ export default function TeamPage() {
                 <Card.Img
                   variant="top"
                   alt="Card image"
-                  src={SHost + Alum.ProfilePicture.url}
+                  src={Alum.ProfilePicture.url}
                 />
                 <Card.ImgOverlay className="card-img-overlay d-flex flex-column justify-content-end">
                   <Card.Title style={{ paddingLeft: "7px" }}>
@@ -226,7 +226,7 @@ export default function TeamPage() {
                 <Card.Img
                   variant="top"
                   alt="Card image"
-                  src={SHost + Alum.ProfilePicture.url}
+                  src={Alum.ProfilePicture.url}
                 />
                 <Card.ImgOverlay className="card-img-overlay d-flex flex-column justify-content-end">
                   <Card.Title style={{ paddingLeft: "7px" }}>
@@ -275,7 +275,7 @@ export default function TeamPage() {
                 <Card.Img
                   variant="top"
                   alt="Card image"
-                  src={SHost + Alum.ProfilePicture.url}
+                  src={Alum.ProfilePicture.url}
                 />
                 <Card.ImgOverlay className="card-img-overlay d-flex flex-column justify-content-end">
                   <Card.Title style={{ paddingLeft: "7px" }}>

@@ -2,7 +2,6 @@ import React from "react";
 import "./EventsPage.css";
 import { useQuery, gql } from "@apollo/client";
 
-import { SHost } from "../Links";
 import Loading from "../Components/Loading";
 import Error from "../Components/Error";
 
@@ -77,7 +76,7 @@ export default function EventsPage() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={SHost + Eve.Poster.url} alt={Eve.Title} />
+                  <img src={Eve.Poster.url} alt={Eve.Title} />
                 </a>
                 <a
                   target="_blank"
@@ -115,7 +114,7 @@ export default function EventsPage() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={SHost + Eve.Poster.url} alt={Eve.Title} />
+                    <img src={Eve.Poster.url} alt={Eve.Title} />
                   </a>
                 </div>
                 <a
