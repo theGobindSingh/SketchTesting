@@ -8,8 +8,6 @@ import { Card, Col, Row } from "react-bootstrap";
 import { EnvelopeFill, Instagram } from "react-bootstrap-icons";
 import { IoBodyOutline } from "react-icons/io5";
 
-import { SHost } from "../Links";
-
 const getAlumni = gql`
   query Alumni {
     clubRole(id: 1) {
