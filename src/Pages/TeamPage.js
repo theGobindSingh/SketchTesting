@@ -219,7 +219,7 @@ export default function TeamPage() {
       </div>
       <div className="Members Team">
         <h2>The Limbs</h2>
-        <Row sm={3} md={4} lg={6} className="Members">
+        <Row sm={3} md={4} lg={5} className="Members">
           {Members.clubRole.members.map((Alum, index) => (
             <Col key={Alum.id}>
               <Card>
@@ -230,11 +230,11 @@ export default function TeamPage() {
                 />
                 <Card.ImgOverlay className="card-img-overlay d-flex flex-column justify-content-end">
                   <Card.Title style={{ paddingLeft: "7px" }}>
-                    {Alum.Name}
+                    <h5>{Alum.Name}</h5>
+                    <span style={{ fontSize: "0.9rem", paddingLeft: "5%" }}>
+                      Member
+                    </span>
                   </Card.Title>
-                  <p style={{ fontSize: "0.9rem", paddingLeft: "5%" }}>
-                    Member
-                  </p>
                   <div
                     className="TeamIcons"
                     style={{

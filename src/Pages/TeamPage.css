@@ -25,11 +25,17 @@
 }
 
 #TeamPageDIV .Members img {
+  height: 100%;
+  width: auto;
   object-fit: cover;
 }
+#TeamPageDIV .Members .col {
+  height: 13.5rem;
+  width: 14rem;
+}
 #TeamPageDIV .Members .card {
-  height: 13rem;
-  width: 13rem;
+  height: 100%;
+  width: 100%;
 }
 #TeamPageDIV .Members p {
   display: none;
@@ -55,6 +61,10 @@
 
   #TeamPageDIV .OManagers .card {
     width: 9rem;
+  }
+  #TeamPageDIV .Members .card {
+    height: 140px;
+    width: 140px;
   }
 
   #TeamPageDIV .Alumini .card {
