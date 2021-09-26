@@ -36,6 +36,13 @@ export default function EventDetailPage() {
   if (error) {
     return <Error />;
   }
+  try {
+    var test = data.event.Title;
+    console.log(test);
+  } catch (e) {
+    console.log(e);
+    return <Error />;
+  }
 
   return (
     <div id="EventDetailDIV">
