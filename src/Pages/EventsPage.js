@@ -6,6 +6,7 @@ import Loading from "../Components/Loading";
 import Error from "../Components/Error";
 
 import { Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const newEve = gql`
   query nE {
@@ -71,19 +72,10 @@ export default function EventsPage() {
           {newEvents.map((Eve) => (
             <Col key={Eve.id}>
               <div>
-                <a
-                  href="https://www.google.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <Link to={`/Events/${Eve.id}`}>
                   <img src={Eve.Poster.url} alt={Eve.Title} />
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.google.com"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
+                </Link>
+                <Link to={`/Events/${Eve.id}`}>
                   <h5
                     style={{
                       paddingLeft: "6%",
@@ -92,7 +84,7 @@ export default function EventsPage() {
                   >
                     {Eve.Title}
                   </h5>
-                </a>
+                </Link>
               </div>
             </Col>
           ))}
@@ -109,18 +101,12 @@ export default function EventsPage() {
             <Col key={Eve.id}>
               <div>
                 <div className="aForImgEve">
-                  <a
-                    href="https://www.google.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <Link to={`/Events/${Eve.id}`}>
                     <img src={Eve.Poster.url} alt={Eve.Title} />
-                  </a>
+                  </Link>
                 </div>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.google.com"
+                <Link
+                  to={`/Events/${Eve.id}`}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <h5
@@ -131,7 +117,7 @@ export default function EventsPage() {
                   >
                     {Eve.Title}
                   </h5>
-                </a>
+                </Link>
               </div>
             </Col>
           ))}

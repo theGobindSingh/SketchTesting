@@ -1,0 +1,11 @@
+#EventDetailDIV {
+  color: aliceblue;
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+  padding-left: 6%;
+  padding-right: 6%;
+  vertical-align: middle;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}

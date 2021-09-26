@@ -10,6 +10,7 @@ import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import EventsPage from "./Pages/EventsPage";
+import EventDetailPage from "./Pages/EventDetailPage";
 import JoinPage from "./Pages/JoinPage";
 import StoriesPage from "./Pages/StoriesPage";
 import TeamPage from "./Pages/TeamPage";
@@ -44,8 +45,11 @@ function App() {
             <Route path="/Contact">
               <ContactPage />
             </Route>
-            <Route path="/Events">
+            <Route exact path="/Events">
               <EventsPage />
+            </Route>
+            <Route path="/Events/:id">
+              <EventDetailPage />
             </Route>
             <Route path="/Join">
               <JoinPage />
