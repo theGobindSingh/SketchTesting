@@ -17,6 +17,12 @@
 #EventDetailDIV .Eve.content.container p {
   padding-left: 5%;
 }
+#EventDetailDIV .Eve.content.container img {
+  border-radius: 10px;
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
 #EventDetailDIV .Eve.content.container > * {
   margin-top: 50px;
   margin-bottom: 50px;
