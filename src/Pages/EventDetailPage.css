@@ -18,3 +18,10 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+#EventDetailDIV a {
+  text-decoration: none;
+  font-weight: bold;
+  color: magenta;
+  cursor: pointer;
+}
