@@ -1,5 +1,5 @@
 import "./EventDetailPage.css";
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import Moment from "react-moment";
@@ -20,6 +20,13 @@ const eve = gql`
   }
 `;
 export default function EventDetailPage() {
+  useEffect(() => {
+    var aElem = document.getElementsByTagName("a");
+    for (let i = 0; i < aElem.length; i++) {
+      aElem[i].setAttribute("target", "_blank");
+      aElem[i].setAttribute("rel", "noreferrer");
+    }
+  }, []);
   const { id } = useParams();
 
   const { loading, error, data } = useQuery(eve, { variables: { id: id } });
@@ -29,6 +36,7 @@ export default function EventDetailPage() {
   if (error) {
     return <Error />;
   }
+
   return (
     <div id="EventDetailDIV">
       <div
