@@ -58,9 +58,6 @@ export default function EventsPage() {
   const newEvents = newE.eventCatagory.events;
   const pastEvents = pastE.eventCatagory.events;
 
-  console.log(newEvents);
-  console.log(pastEvents);
-
   let newEves = <br></br>;
   let pastEves = <br></br>;
 
@@ -72,9 +69,11 @@ export default function EventsPage() {
           {newEvents.map((Eve) => (
             <Col key={Eve.id}>
               <div>
-                <Link to={`/Events/${Eve.id}`}>
-                  <img src={Eve.Poster.url} alt={Eve.Title} />
-                </Link>
+                <div className="aForImgEve">
+                  <Link to={`/Events/${Eve.id}`}>
+                    <img src={Eve.Poster.url} alt={Eve.Title} />
+                  </Link>
+                </div>
                 <Link to={`/Events/${Eve.id}`}>
                   <h5
                     style={{

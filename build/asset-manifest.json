@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.dbb51883.chunk.css",
-    "main.js": "./static/js/main.a9be51a2.chunk.js",
-    "main.js.map": "./static/js/main.a9be51a2.chunk.js.map",
+    "main.css": "./static/css/main.fdee0222.chunk.css",
+    "main.js": "./static/js/main.33db74c2.chunk.js",
+    "main.js.map": "./static/js/main.33db74c2.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.fc3961a5.js",
     "runtime-main.js.map": "./static/js/runtime-main.fc3961a5.js.map",
     "static/css/2.818011ed.chunk.css": "./static/css/2.818011ed.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.eb1c2fd9.chunk.js.map": "./static/js/3.eb1c2fd9.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.818011ed.chunk.css.map": "./static/css/2.818011ed.chunk.css.map",
-    "static/css/main.dbb51883.chunk.css.map": "./static/css/main.dbb51883.chunk.css.map",
+    "static/css/main.fdee0222.chunk.css.map": "./static/css/main.fdee0222.chunk.css.map",
     "static/js/2.0bd94ee4.chunk.js.LICENSE.txt": "./static/js/2.0bd94ee4.chunk.js.LICENSE.txt",
     "static/media/BS_logo.35904b2f.png": "./static/media/BS_logo.35904b2f.png",
     "static/media/SemanticUI_logo.3c0109cd.png": "./static/media/SemanticUI_logo.3c0109cd.png",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.fc3961a5.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.0bd94ee4.chunk.js",
-    "static/css/main.dbb51883.chunk.css",
-    "static/js/main.a9be51a2.chunk.js"
+    "static/css/main.fdee0222.chunk.css",
+    "static/js/main.33db74c2.chunk.js"
   ]
 }

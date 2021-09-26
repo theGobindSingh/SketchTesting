@@ -108,9 +108,6 @@ export default function TeamPage() {
     return <Error />;
   }
 
-  //console.log(JSON.stringify(Alumini.clubRole.members));
-  // console.log(Managers.clubRole.members[0].club_roles[0].Role);
-
   return (
     <div id="TeamPageDIV">
       <div className="teamOurBody" style={{ display: "flex" }}>

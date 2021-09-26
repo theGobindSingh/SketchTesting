@@ -200,16 +200,6 @@ export default function JoinPage() {
             <Button
               variant="outline-light"
               onClick={() => {
-                console.log(
-                  Name,
-                  Email,
-                  YearSec,
-                  RAnum,
-                  Phone,
-                  Hobby,
-                  StrWek,
-                  Domain
-                );
                 try {
                   joinSubmit({
                     variables: {

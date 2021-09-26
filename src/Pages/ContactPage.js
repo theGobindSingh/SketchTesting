@@ -82,7 +82,6 @@ export default function ContactPage() {
           <Button
             variant="outline-light"
             onClick={() => {
-              console.log(NAME, EMAIL, MSG);
               try {
                 ContactSubmit({
                   variables: {
