@@ -63,7 +63,7 @@ export default function EventDetailPage() {
           style={{
             marginBottom: "15px",
             borderRadius: "50%",
-            maxWidth: "20%",
+            maxWidth: "250px",
             height: "auto",
             objectFit: "contain",
           }}
