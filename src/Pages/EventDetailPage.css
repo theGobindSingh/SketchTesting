@@ -9,12 +9,19 @@
   align-self: center;
   align-content: center;
 }
+#EventDetailDIV .Eve.title.container,
+#EventDetailDIV .Eve.date.container {
+  color: aliceblue;
+  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
+    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+}
 
 #EventDetailDIV .Eve.content.container * {
   line-height: auto;
 }
 #EventDetailDIV .Eve.content.container p {
   padding-left: 5%;
+  font-size: 1.2rem;
 }
 #EventDetailDIV .Eve.content.container img {
   border-radius: 10px;

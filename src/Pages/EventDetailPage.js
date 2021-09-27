@@ -94,7 +94,7 @@ export default function EventDetailPage() {
           borderRadius: "10px",
           padding: "4%",
           paddingLeft: "5%",
-          background: "rgba(216, 216, 255, 0.45)",
+          background: "rgba(216, 216, 255, 0.5)",
         }}
       >
         <ReactMarkdown>{data.event.Content}</ReactMarkdown>
