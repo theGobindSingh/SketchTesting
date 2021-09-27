@@ -33,9 +33,9 @@ export default function SiteInfo() {
             <Lottie animationData={REACTani} loop></Lottie>
           </Col>
           <Col>
-            <h4>Bootstrap</h4>
+            <h4>GraphQL</h4>
             <div>
-              <img src={bslogo} alt="Bootstrap Logo"></img>
+              <img src={bslogo} alt="GraphQL Logo"></img>
             </div>
           </Col>
         </Row>

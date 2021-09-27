@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.9a8f7d01.chunk.css",
-    "main.js": "./static/js/main.6afb54fc.chunk.js",
-    "main.js.map": "./static/js/main.6afb54fc.chunk.js.map",
+    "main.js": "./static/js/main.60461860.chunk.js",
+    "main.js.map": "./static/js/main.60461860.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.fc3961a5.js",
     "runtime-main.js.map": "./static/js/runtime-main.fc3961a5.js.map",
     "static/css/2.818011ed.chunk.css": "./static/css/2.818011ed.chunk.css",
@@ -14,7 +14,7 @@
     "static/css/2.818011ed.chunk.css.map": "./static/css/2.818011ed.chunk.css.map",
     "static/css/main.9a8f7d01.chunk.css.map": "./static/css/main.9a8f7d01.chunk.css.map",
     "static/js/2.0bd94ee4.chunk.js.LICENSE.txt": "./static/js/2.0bd94ee4.chunk.js.LICENSE.txt",
-    "static/media/BS_logo.35904b2f.png": "./static/media/BS_logo.35904b2f.png",
+    "static/media/BS_logo.fc6b9451.png": "./static/media/BS_logo.fc6b9451.png",
     "static/media/SemanticUI_logo.3c0109cd.png": "./static/media/SemanticUI_logo.3c0109cd.png",
     "static/media/react_bootstrap_logo.eafc28ed.png": "./static/media/react_bootstrap_logo.eafc28ed.png",
     "static/media/sketch_logo.f19afd7b.png": "./static/media/sketch_logo.f19afd7b.png",
@@ -25,6 +25,6 @@
     "static/css/2.818011ed.chunk.css",
     "static/js/2.0bd94ee4.chunk.js",
     "static/css/main.9a8f7d01.chunk.css",
-    "static/js/main.6afb54fc.chunk.js"
+    "static/js/main.60461860.chunk.js"
   ]
 }
