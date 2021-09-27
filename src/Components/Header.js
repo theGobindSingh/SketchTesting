@@ -40,7 +40,12 @@ export default function Header() {
           </Col>
           <Col md="auto">
             <div>
-              <Dropdown autoClose="true" title="" id="btn_drop_head">
+              <Dropdown
+                autoClose="true"
+                title=""
+                id="btn_drop_head"
+                align="end"
+              >
                 <Dropdown.Toggle variant="dark">
                   <List />
                 </Dropdown.Toggle>
