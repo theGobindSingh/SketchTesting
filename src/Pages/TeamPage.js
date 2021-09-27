@@ -276,7 +276,7 @@ export default function TeamPage() {
                   <Card.Title style={{ paddingLeft: "7px" }}>
                     {Alum.Name}
                     <p style={{ fontSize: "0.9rem", paddingLeft: "5%" }}>
-                      Alumini
+                      Alumni
                     </p>
                   </Card.Title>
                   <div

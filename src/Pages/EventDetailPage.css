@@ -1,7 +1,6 @@
 #EventDetailDIV {
-  color: aliceblue;
-  text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
-    #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+  color: black;
+  text-shadow: rgb(122, 122, 122) 0px 0px 3px;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 2%;
