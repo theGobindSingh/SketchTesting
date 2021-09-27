@@ -17,7 +17,7 @@ particlesJS(
   {
     particles: {
       number: {
-        value: 123,
+        value: 90,
         density: {
           enable: true,
           value_area: 710.2665077774184,
@@ -98,9 +98,9 @@ particlesJS(
       },
       modes: {
         grab: {
-          distance: 350,
+          distance: 280,
           line_linked: {
-            opacity: 0.6823581640454799,
+            opacity: 0.7,
           },
         },
         bubble: {
@@ -115,7 +115,7 @@ particlesJS(
           duration: 0.4,
         },
         push: {
-          particles_nb: 20,
+          particles_nb: 10,
         },
         remove: {
           particles_nb: 20,
