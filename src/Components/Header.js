@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./Header.css";
 import logo from "../Assets/sketch_logo.png";
 
@@ -44,7 +42,18 @@ export default function Header() {
                 autoClose="true"
                 title=""
                 id="btn_drop_head"
-                align="end"
+                onToggle={() => {
+                  try {
+                    window.scrollTo(
+                      document
+                        .getElementById("btn_drop_head")
+                        .getBoundingClientRect().left,
+                      document
+                        .getElementById("btn_drop_head")
+                        .getBoundingClientRect().top
+                    );
+                  } catch (e) {}
+                }}
               >
                 <Dropdown.Toggle variant="dark">
                   <List />
