@@ -33,6 +33,13 @@
   text-decoration: none;
   color: inherit;
   text-decoration: none;
+  font-size: large;
+  padding-top: 03.5%;
+  padding-bottom: 03.5%;
+}
+
+#btn_drop_head > * > * svg {
+  font-size: 1.3rem;
 }
 
 #btn_drop_head > * > * > * > * {

@@ -6,6 +6,11 @@
   font-family: "Poppins";
 }
 
+.F_M {
+  visibility: hidden;
+  display: none;
+}
+
 #underDevAni {
   object-fit: contain;
   display: flex;
@@ -15,7 +20,16 @@
   margin: 0%;
   padding: 0%;
 }
-
+@media only screen and (max-width: 767px) {
+  .F_M {
+    visibility: visible !important;
+    display: unset !important;
+  }
+  .N_F_M {
+    visibility: hidden !important;
+    display: none !important;
+  }
+}
 @media only screen and (min-width: 767px) {
   * {
     cursor: none;

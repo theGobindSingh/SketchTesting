@@ -10,6 +10,9 @@ import DevelopAni from "../Assets/Animations/develop_old.json";
 import "./HomePage.css";
 
 export default function HomePage() {
+  var aniHeading = "Design";
+  var aniTemp = DesignAni;
+
   return (
     <div id="HomePageDiv">
       <div className="HomeIntroDiv">
@@ -37,8 +40,10 @@ export default function HomePage() {
           </Link>
         </div>
       </div>
-      <h3>Our Workshops & Events Empower You to: </h3>
-      <div className="HomeAnimations">
+      <h3 style={{ paddingBottom: "3%" }}>
+        Our Workshops & Events Empower You to:{" "}
+      </h3>
+      <div className="HomeAnimations N_F_M">
         <Row className="MainRow">
           <Col className="Col1">
             <h4>Design</h4>
@@ -53,6 +58,22 @@ export default function HomePage() {
             <Lottie animationData={DeliverAni} loop></Lottie>
           </Col>
         </Row>
+      </div>
+      <div className="HomeAnimations F_M">
+        <div className="animCont">
+          <div className="anim1">
+            <h2 style={{ marginLeft: "7%" }}>{aniHeading}</h2>
+            <Lottie animationData={aniTemp} loop></Lottie>
+          </div>
+          <div className="anim2">
+            <h2 style={{ marginLeft: "7%" }}>Develop</h2>
+            <Lottie animationData={DevelopAni} loop></Lottie>
+          </div>
+          <div className="anim3">
+            <h2 style={{ marginLeft: "7%" }}>Deliver</h2>
+            <Lottie animationData={DeliverAni} loop></Lottie>
+          </div>
+        </div>
       </div>
     </div>
   );

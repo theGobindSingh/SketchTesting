@@ -12,6 +12,7 @@
 }
 
 #HomePageDiv {
+  color: aliceblue;
   text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
     #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
 }
@@ -34,8 +35,6 @@
   margin: 5%;
   margin-bottom: 3%;
   margin-left: 7%;
-  color: aliceblue;
-
   -webkit-font-smoothing: antialiased;
 }
 
@@ -91,6 +90,9 @@
     max-width: 90%;
     margin-top: 8%;
     margin-bottom: 8%;
+  }
+  .HomeIntroDivFM {
+    padding-bottom: 06%;
   }
   .HomeIntroDivFM > p {
     color: aliceblue;
