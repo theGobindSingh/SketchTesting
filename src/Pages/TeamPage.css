@@ -2,8 +2,8 @@
   color: aliceblue;
   text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
   font-size: 20px;
-  padding-left: 7%;
-  padding-right: 7%;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
 }
 
 #TeamPageDIV h2 {
@@ -52,6 +52,14 @@
   #TeamPageDIV .card {
     margin-right: 0%;
     padding-right: 0%;
+  }
+  #TeamPageDIV .Members .col,
+  #TeamPageDIV .Alumini .col {
+    margin-right: 0%;
+    padding-right: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 3%;
+    height: 100%;
   }
 
   #TeamPageDIV .card img {
@@ -109,5 +117,4 @@
 #TeamPageDIV .Team {
   padding-top: 2%;
   padding-left: 2%;
-  margin-bottom: 5%;
 }

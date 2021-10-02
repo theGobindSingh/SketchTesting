@@ -7,15 +7,35 @@
   padding-left: 7%;
   padding-right: 7%;
 }
-
+.Events .col .aForImgEve {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: fit-content;
+  max-height: auto;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .Events .aForImgEve {
   overflow: hidden;
   border-radius: 10px;
 }
+.Events .col {
+  margin-bottom: 15px;
+}
 .Events img {
   object-fit: contain;
   transition: transform 0.4s;
-  max-height: 280px;
+  max-height: 270px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .Events img {
+    object-fit: contain;
+    height: 135px;
+    width: auto;
+  }
 }
 .Events img:hover {
   transform: scale(1.1);

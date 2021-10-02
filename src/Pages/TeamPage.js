@@ -83,6 +83,18 @@ const getMembers = gql`
 `;
 
 export default function TeamPage() {
+  const sw = window.screen.width;
+  function getDisplayName(fullName) {
+    try {
+      if (sw < 768) {
+        return fullName.split(" ")[0];
+      } else {
+        return fullName;
+      }
+    } catch (e) {
+      return fullName;
+    }
+  }
   //const { loading, error, data } = useQuery(getAlumni);
 
   const Team = () => {
@@ -115,7 +127,7 @@ export default function TeamPage() {
         <IoBodyOutline className="bodyIcon" />
       </div>
       <div className="Managers Team">
-        <h2>The Head</h2>
+        <h2 style={{ paddingTop: "10px" }}>The Head</h2>
         <Row sm={2} md={4} className="Managers">
           {Managers.clubRole.members.map((Alum, index) => (
             <Col key={Alum.id}>
@@ -164,7 +176,7 @@ export default function TeamPage() {
         </Row>
       </div>
       <div className="OManagers Team">
-        <h2>The Torso</h2>
+        <h2 style={{ paddingTop: "10px" }}>The Torso</h2>
         <Row sm={2} md={4} className="OManagers">
           {OManagers.clubRole.members.map((Alum, index) => (
             <Col key={Alum.id}>
@@ -176,7 +188,7 @@ export default function TeamPage() {
                 />
                 <Card.ImgOverlay className="card-img-overlay d-flex flex-column justify-content-end">
                   <Card.Title style={{ paddingLeft: "7px" }}>
-                    {Alum.Name}
+                    {getDisplayName(Alum.Name)}
                   </Card.Title>
                   <p style={{ fontSize: "0.9rem", paddingLeft: "5%" }}>
                     {OManagers.clubRole.members[index].club_roles[1].Role}
@@ -213,9 +225,9 @@ export default function TeamPage() {
         </Row>
       </div>
       <div className="Members Team">
-        <h2>The Limbs</h2>
-        <Row sm={3} md={4} lg={5} className="Members">
-          {Members.clubRole.members.map((Alum, index) => (
+        <h2 style={{ paddingTop: "10px" }}>The Limbs</h2>
+        <Row sm="auto" md="auto" lg="auto" className="Members">
+          {Members.clubRole.members.map((Alum) => (
             <Col key={Alum.id}>
               <Card>
                 <Card.Img
@@ -225,7 +237,7 @@ export default function TeamPage() {
                 />
                 <Card.ImgOverlay className="card-img-overlay d-flex flex-column justify-content-end">
                   <Card.Title style={{ paddingLeft: "7px" }}>
-                    <h5>{Alum.Name}</h5>
+                    <h5>{getDisplayName(Alum.Name)}</h5>
                     <span style={{ fontSize: "0.9rem", paddingLeft: "5%" }}>
                       Member
                     </span>
@@ -262,7 +274,7 @@ export default function TeamPage() {
         </Row>
       </div>
       <div className="Alumini Team">
-        <h2>The Neck</h2>
+        <h2 style={{ paddingTop: "10px" }}>The Neck</h2>
         <Row sm={2} md={4} className="Alumini">
           {Alumini.clubRole.members.map((Alum) => (
             <Col key={Alum.id}>
@@ -274,7 +286,7 @@ export default function TeamPage() {
                 />
                 <Card.ImgOverlay className="card-img-overlay d-flex flex-column justify-content-end">
                   <Card.Title style={{ paddingLeft: "7px" }}>
-                    {Alum.Name}
+                    {getDisplayName(Alum.Name)}
                     <p style={{ fontSize: "0.9rem", paddingLeft: "5%" }}>
                       Alumni
                     </p>
