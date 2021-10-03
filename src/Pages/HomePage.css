@@ -15,6 +15,7 @@
   color: aliceblue;
   text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
     #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px;
+  overflow: hidden;
 }
 
 .HomeIntroDivFM > p {
@@ -84,6 +85,43 @@
   text-align: center;
 }
 
+@keyframes homeAnis {
+  0% {
+    opacity: 0;
+    left: 0px;
+  }
+  16.5% {
+    opacity: 1;
+  }
+  32% {
+    left: 0;
+  }
+  33% {
+    opacity: 0;
+    left: -385px;
+  }
+  49.5% {
+    opacity: 1;
+  }
+  65% {
+    left: -385px;
+  }
+  66% {
+    opacity: 0;
+    left: -765px;
+  }
+  82.5% {
+    opacity: 1;
+  }
+  99% {
+    left: -765px;
+  }
+  100% {
+    opacity: 0;
+    left: 0px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   #HomePageDiv > * > * > h1 {
     color: aliceblue;
@@ -101,5 +139,12 @@
     margin-bottom: 7%;
     text-align: end;
     font-size: 18px;
+  }
+
+  .HomeAnimations.F_M .animCont {
+    overflow: hidden;
+    position: relative;
+    width: 1150px;
+    animation: homeAnis 10s ease-in-out 0s infinite normal;
   }
 }
